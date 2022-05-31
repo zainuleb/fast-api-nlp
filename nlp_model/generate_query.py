@@ -3,6 +3,9 @@ import pandas as pd
 import numpy as np
 from nltk.corpus import wordnet
 
+import nltk
+nltk.download('popular')
+
 print('')
 print('')
 # print("Enter NL query : " , end =" ")
@@ -13,7 +16,7 @@ print('')
 def exp_attr(x):
     lst , rlst =[] , []
 
-    df=pd.read_csv("D:/volunteer-app-next/fastapi/nlp_model/attributes.csv")
+    df=pd.read_csv("C:/Users/Eb/Downloads/fastapi-master/fastapi-master/nlp_model/attributes.csv")
     lst = df.values
 
     for i in lst:
@@ -39,7 +42,7 @@ def exp_attr(x):
 def imp_attr(x):
     lst , rlst = [] , []
 
-    df=pd.read_csv("D:/volunteer-app-next/fastapi/nlp_model/domain_dictionary.csv")
+    df=pd.read_csv("C:/Users/Eb/Downloads/fastapi-master/fastapi-master/nlp_model/domain_dictionary.csv")
     lst = df.values
 
     for i in lst:
@@ -77,7 +80,7 @@ def gen_query(x):
 
     return lst
 
-    # df=pd.read_csv("D:/volunteer-app-next/fastapi/nlp_model/relations.csv")
+    # df=pd.read_csv("C:/Users/Eb/Downloads/fastapi-master/fastapi-master/nlp_model/relations.csv")
     # lst = df.values
 
     # for i in lst:

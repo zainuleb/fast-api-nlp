@@ -5,7 +5,8 @@ from nltk.tokenize import word_tokenize
 from textblob import TextBlob
 from nltk.stem import PorterStemmer
 from nltk.stem import WordNetLemmatizer
-import speech_recognition as sr
+
+nltk.download('popular')
 
 def preproc(str):
 
